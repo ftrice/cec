@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="main.css">
+
+
+    <!--<style>-->
+    <!--* {-->
+    <!--margin: 0;-->
+    <!--font-family: 'Roboto', sans-serif;-->
+    <!--box-sizing: border-box;-->
+    <!--}-->
+
+    <!--body {-->
+    <!--background-color: wheat;-->
+    <!--}-->
+
+    <!--.container {-->
+    <!--width: 1180px;-->
+    <!--height: 3000px;-->
+    <!--background-color: white;-->
+    <!--margin: 0 auto;-->
+    <!--position: relative;-->
+    <!--}-->
+
+    <!--.logo {-->
+    <!--width: 1180px;-->
+    <!--height: 100px;-->
+    <!--background-color: white;-->
+    <!--margin: 0 auto;-->
+    <!--padding: 20px;-->
+    <!--position: fixed;-->
+    <!--top: 0;-->
+    <!--z-index: 100;-->
+    <!--}-->
+
+    <!--nav {-->
+    <!--width: 1170px;-->
+    <!--height: 60px;-->
+    <!--background-color: #FF6900;-->
+    <!--border-radius: 5px;-->
+    <!--margin-left: 5px;-->
+    <!--position: fixed;-->
+    <!--top: 100px;-->
+    <!--z-index: 100;-->
+    <!--}-->
+
+    <!--.dropbtn {-->
+    <!--background-color: #FF6900;-->
+    <!--color: white;-->
+    <!--padding: 16px;-->
+    <!--font-size: 16px;-->
+    <!--border: none;-->
+    <!--border-radius: 5px;-->
+    <!--font-family: 'Roboto', sans-serif;-->
+    <!--font-size: 18px;-->
+    <!--font-weight: 500;-->
+    <!--transition: color 1s ease-out;-->
+    <!--}-->
+
+    <!--.dropdown {-->
+    <!--position: relative;-->
+    <!--display: inline-block;-->
+    <!--}-->
+
+    <!--.dropdown-content {-->
+    <!--display: none;-->
+    <!--position: absolute;-->
+    <!--top: 55px;-->
+    <!--background-color: lightgrey;-->
+    <!--min-width: 160px;-->
+    <!--box-shadow: 0 8px 16px 0px rgba(0, 0, 0, 0.2);-->
+    <!--z-index: 1;-->
+    <!--}-->
+
+    <!--.dropdown-content a {-->
+    <!--color: black;-->
+    <!--padding: 12px 16px;-->
+    <!--text-decoration: none;-->
+    <!--display: block;-->
+    <!--}-->
+
+    <!--.dropdown-content a:hover {-->
+    <!--background-color: #ddd;-->
+    <!--}-->
+
+    <!--.dropdown:hover .dropdown-content {-->
+    <!--display: block;-->
+    <!--}-->
+
+    <!--.dropdown:hover .dropbtn {-->
+    <!--color: #555025;-->
+    <!--background-color: #FF6900;-->
+    <!--cursor: pointer;-->
+
+    <!--}-->
+
+    <!--.dropbtn-right {-->
+    <!--background-color: #FF6900;-->
+    <!--color: palegoldenrod;-->
+    <!--padding: 16px;-->
+    <!--font-size: 16px;-->
+    <!--border: none;-->
+    <!--border-radius: 5px;-->
+    <!--font-family: 'Roboto', sans-serif;-->
+    <!--font-size: 18px;-->
+    <!--font-weight: 500;-->
+    <!--transition: color 1s ease-out;-->
+    <!--}-->
+
+    <!--.dropbtn-right:hover {-->
+    <!--color: #555025;-->
+    <!--cursor: pointer;-->
+    <!--}-->
+
+    <!--.dropdown-right {-->
+    <!--position: relative;-->
+    <!--display: inline-block;-->
+    <!--float: right;-->
+    <!--}-->
+
+    <!--.eight-principles-description {-->
+    <!--width: 300px;-->
+    <!--height: 75px;-->
+    <!--background-color: white;-->
+    <!--position: fixed;-->
+    <!--top: 170px;-->
+    <!--z-index: 200;-->
+    <!--}-->
+
+    <!--p.description {-->
+    <!--color: black;-->
+    <!--font-family: 'Roboto', sans-serif;-->
+    <!--font-size: 14px;-->
+    <!--font-weight: 400;-->
+    <!--text-align: right;-->
+    <!--/*position: fixed;*/-->
+    <!--/*top: 170px;*/-->
+    <!--padding-top: 0;-->
+    <!--padding-right: 15px;-->
+    <!--padding-left: 10px;-->
+    <!--}-->
+
+    <!--.page-title {-->
+    <!--color: #555025;-->
+    <!--font-family: 'Roboto', sans-serif;-->
+    <!--font-size: 36px;-->
+    <!--font-weight: 700;-->
+    <!--color: white;-->
+    <!--/*color: #333333;*/-->
+    <!--color: palegoldenrod;-->
+    <!--margin-top: 0;-->
+    <!--padding-top: 10px;-->
+    <!--padding-left: 15px;-->
+    <!--}-->
+
+    <!--.left-column {-->
+    <!--box-sizing: border-box;-->
+    <!--width: 300px;-->
+    <!--height: 1500px;-->
+    <!--background-color: white;-->
+    <!--float: left;-->
+    <!--position: sticky;-->
+    <!--top: 170px;-->
+    <!--}-->
+
+    <!--.main {-->
+    <!--width: 580px;-->
+    <!--height: 2750px;-->
+    <!--background-color: #E5E5E5;-->
+    <!--border-radius: 10px;-->
+    <!--margin: 0 auto;-->
+    <!--position: absolute;-->
+    <!--margin-top: 170px;-->
+    <!--margin-left: 300px;-->
+    <!--}-->
+
+    <!--.main-title {-->
+    <!--width: 580px;-->
+    <!--height: 120px;-->
+    <!--color: white;-->
+    <!--color: palegoldenrod;-->
+
+    <!--background-color: #FF6900;-->
+    <!--border-radius: 10px 10px 0 0;-->
+    <!--font-family: 'Roboto', sans-serif;-->
+    <!--}-->
+
+    <!--p.main-caption {-->
+    <!--/*color: #555025;*/-->
+    <!--color: white;-->
+    <!--font-family: 'Roboto', sans-serif;-->
+    <!--font-size: 12px;-->
+    <!--font-weight: 400;-->
+    <!--text-align: left;-->
+    <!--padding: 10px 10px 20px 15px;-->
+    <!--}-->
+
+    <!--p.main-content {-->
+    <!--color: #555025;-->
+    <!--font-family: 'Roboto', sans-serif;-->
+    <!--font-size: 14px;-->
+    <!--font-weight: 400;-->
+    <!--text-align: left;-->
+    <!--line-height: 20px;-->
+    <!--padding: 10px 40px;-->
+    <!--}-->
+
+    <!--ul.main-content {-->
+    <!--color: #555025;-->
+    <!--font-family: 'Roboto', sans-serif;-->
+    <!--font-size: 14px;-->
+    <!--font-weight: 400;-->
+    <!--text-align: left;-->
+    <!--line-height: 20px;-->
+    <!--padding: 10px 40px;-->
+    <!--margin-left: 15px;-->
+    <!--}-->
+
+    <!--ol.main-content {-->
+    <!--color: #555025;-->
+    <!--font-family: 'Roboto', sans-serif;-->
+    <!--font-size: 14px;-->
+    <!--font-weight: 400;-->
+    <!--text-align: left;-->
+    <!--line-height: 20px;-->
+    <!--padding: 10px 40px;-->
+    <!--margin-left: 15px;-->
+    <!--}-->
+
+    <!--.thumbnail-container {-->
+    <!--width: 280px;-->
+    <!--height: 300px;-->
+    <!--background-color: white;-->
+    <!--position: fixed;-->
+    <!--top: 275px;-->
+    <!--}-->
+
+    <!--.principle_thumbnail {-->
+    <!--width: 80px;-->
+    <!--height: 80px;-->
+    <!--float: right;-->
+    <!--margin: 0 0 10px 10px;-->
+    <!--}-->
+
+    <!--.principle_thumbnail:hover {-->
+    <!--background-image: url("images/nav-one-principle-hover.jpg");-->
+    <!--}-->
+
+    <!--footer {-->
+    <!--width: 1170px;-->
+    <!--height: 50px;-->
+    <!--color: white;-->
+    <!--background-color: #FF6900;-->
+    <!--border-radius: 5px;-->
+    <!--margin-left: 5px;-->
+    <!--font-family: 'Roboto', sans-serif;-->
+    <!--font-size: 14px;-->
+    <!--font-weight: 400;-->
+    <!--text-align: center;-->
+    <!--margin-bottom: 10px;-->
+    <!--padding: 5px;-->
+    <!--position: absolute;-->
+    <!--bottom: 0;-->
+    <!--}-->
+
+    <!--.right-column {-->
+    <!--width: 300px;-->
+    <!--height: 1500px;-->
+    <!--background-color: white;-->
+    <!--float: right;-->
+    <!--position: sticky;-->
+    <!--top: 170px;-->
+    <!--}-->
+
+    <!--.right-column-content {-->
+    <!--width: 300px;-->
+    <!--height: 700px;-->
+    <!--background-color: white;-->
+    <!--font-family: 'Roboto', sans-serif;-->
+    <!--font-size: 12px;-->
+    <!--font-weight: 400;-->
+    <!--position: fixed;-->
+    <!--top: 170px;-->
+    <!--z-index: 200;-->
+    <!--/*padding-top: 10px;*/-->
+    <!--padding-right: 10px;-->
+    <!--padding-left: 15px;-->
+    <!--}-->
+
+    <!--.steps-for-working {-->
+    <!--padding-top: 5px;-->
+    <!--}-->
+
+    <!--img {-->
+    <!--margin: 0 auto;-->
+    <!--}-->
+
+    <!--a.principle_thumbnail:hover {-->
+    <!--background-image: url(images/nav-one-principle-hover.jpg);-->
+    <!--}-->
+
+    <!--#thumbnail-container-01 {-->
+    <!--background-image: url('images/nav-one-principle.jpg');-->
+    <!--height: 80px;-->
+    <!--width: 80px;-->
+    <!--float: right;-->
+    <!--margin: 0 0 10px 10px;-->
+    <!--transition-duration: 1.5s;-->
+    <!--}-->
+
+    <!--#thumbnail-container-01:hover {-->
+    <!--background-image: url('images/nav-one-principle-hover.jpg');-->
+    <!--height: 80px;-->
+    <!--width: 80px;-->
+    <!--opacity: 1;-->
+    <!--cursor: pointer;-->
+    <!--}-->
+
+    <!--#thumbnail-container-02 {-->
+    <!--background-image: url('images/nav_two_principle.jpg');-->
+    <!--height: 80px;-->
+    <!--width: 80px;-->
+    <!--float: right;-->
+    <!--margin: 0 0 10px 10px;-->
+    <!--transition-duration: 1.5s;-->
+    <!--}-->
+
+    <!--#thumbnail-container-02:hover {-->
+    <!--background-image: url('images/nav_two_principle_hover.jpg');-->
+    <!--height: 80px;-->
+    <!--width: 80px;-->
+    <!--opacity: 1;-->
+    <!--cursor: pointer;-->
+    <!--}-->
+
+    <!--#thumbnail-container-03 {-->
+    <!--background-image: url('images/nav_three_principle.jpg');-->
+    <!--height: 80px;-->
+    <!--width: 80px;-->
+    <!--float: right;-->
+    <!--margin: 0 0 10px 10px;-->
+    <!--transition-duration: 1.5s;-->
+    <!--}-->
+
+    <!--#thumbnail-container-03:hover {-->
+    <!--background-image: url('images/nav_three_principle_hover.jpg');-->
+    <!--height: 80px;-->
+    <!--width: 80px;-->
+    <!--opacity: 1;-->
+    <!--cursor: pointer;-->
+    <!--}-->
+
+    <!--#thumbnail-container-04 {-->
+    <!--background-image: url('images/nav_four_principle.jpg');-->
+    <!--height: 80px;-->
+    <!--width: 80px;-->
+    <!--float: right;-->
+    <!--margin: 0 0 10px 10px;-->
+    <!--transition-duration: 1.5s;-->
+    <!--}-->
+
+    <!--#thumbnail-container-04:hover {-->
+    <!--background-image: url('images/nav_four_principle_hover.jpg');-->
+    <!--height: 80px;-->
+    <!--width: 80px;-->
+    <!--opacity: 1;-->
+    <!--cursor: pointer;-->
+    <!--}-->
+
+    <!--#thumbnail-container-05 {-->
+    <!--background-image: url('images/nav_five_principle.jpg');-->
+    <!--height: 80px;-->
+    <!--width: 80px;-->
+    <!--float: right;-->
+    <!--margin: 0 0 10px 10px;-->
+    <!--transition-duration: 1.5s;-->
+    <!--}-->
+
+    <!--#thumbnail-container-05:hover {-->
+    <!--background-image: url('images/nav_five_principle_hover.jpg');-->
+    <!--height: 80px;-->
+    <!--width: 80px;-->
+    <!--opacity: 1;-->
+    <!--cursor: pointer;-->
+    <!--}-->
+
+    <!--#thumbnail-container-06 {-->
+    <!--background-image: url('images/nav_six_principle.jpg');-->
+    <!--height: 80px;-->
+    <!--width: 80px;-->
+    <!--float: right;-->
+    <!--margin: 0 0 10px 10px;-->
+    <!--transition-duration: 1.5s;-->
+    <!--}-->
+
+    <!--#thumbnail-container-06:hover {-->
+    <!--background-image: url('images/nav_six_principle_hover.jpg');-->
+    <!--height: 80px;-->
+    <!--width: 80px;-->
+    <!--opacity: 1;-->
+    <!--cursor: pointer;-->
+    <!--}-->
+
+    <!--#thumbnail-container-07 {-->
+    <!--background-image: url('images/nav_seven_principle.jpg');-->
+    <!--height: 80px;-->
+    <!--width: 80px;-->
+    <!--float: right;-->
+    <!--margin: 0 0 10px 10px;-->
+    <!--transition-duration: 1.5s;-->
+    <!--}-->
+
+    <!--#thumbnail-container-07:hover {-->
+    <!--background-image: url('images/nav_seven_principle_hover.jpg');-->
+    <!--height: 80px;-->
+    <!--width: 80px;-->
+    <!--opacity: 1;-->
+    <!--cursor: pointer;-->
+    <!--}-->
+
+    <!--#thumbnail-container-08 {-->
+    <!--background-image: url('images/nav_eight_principle.jpg');-->
+    <!--height: 80px;-->
+    <!--width: 80px;-->
+    <!--float: right;-->
+    <!--margin: 0 0 10px 10px;-->
+    <!--transition-duration: 1.5s;-->
+    <!--}-->
+
+    <!--#thumbnail-container-08:hover {-->
+    <!--background-image: url('images/nav_eight_principle_hover.jpg');-->
+    <!--height: 80px;-->
+    <!--width: 80px;-->
+    <!--opacity: 1;-->
+    <!--cursor: pointer;-->
+    <!--}-->
+
+    <!--.main-orange-bar {-->
+    <!--height: 25px;-->
+    <!--width: 400px;-->
+    <!--background-color: #FDDC91;-->
+    <!--}-->
+
+
+    <!--</style>-->
+</head>
+
+<body>
+<div class="container">
+
+    <div class="logo"><img src="logo/cec_logo.png"/></div>
+    <div class="logo_housing_counts"><img height="50" src="images/housing_counts_logo.png"/></div>
+    <nav>
+        <div class="dropdown">
+            <a href="index_final_green.html"><button class="dropbtn">Introduction</button></a>
+        </div>
+
+        <div class="dropdown">
+            <button class="dropbtn">Eight Principles</button>
+            <div class="dropdown-content">
+                <a href="principle_one_icons.html">1. Synergistic Communities</a>
+                <a href="principle_two_icons.html">2. People-Centered Communities</a>
+                <a href="principle_three_icons.html">3. Globally-Oriented Communities</a>
+                <a href="principle_four_icons.html">4. Meaning-Making Communities</a>
+                <a href="principle_five_icons.html">5. Relationship-Building Communities</a>
+                <a href="principle_six_icons.html">6. Health-Supporting Communities</a>
+                <a href="principle_seven_icons.html">7. Capability-Building Communities</a>
+                <a href="principle_eight_icons.html">8. Innovation-Driven Communities</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <a href="how_to_use.html"><button class="dropbtn">How to Use</button></a>
+        </div>
+        <div class="dropdown">
+            <a href="moving_forward.html"><button class="dropbtn">Moving Forward</button></a>
+        </div>
+
+        <div class="dropdown">
+            <a href="references.html"><button class="dropbtn">References</button></a>
+        </div>
+
+        <!--two nav buttons on the right-->
+        <div class="dropdown-right">
+            <a href="about_us.html"><button class="dropbtn-right">About Us</button></a>
+        </div>
+
+        <div class="dropdown-right">
+            <a href="contact.html"><button class="dropbtn-right">Contact</button></a>
+        </div>
+        <!--end of two nav buttons on the right-->
+
+
+    </nav><!--end of nav-->
+
+    <div class="left-column">
+        <div class="eight-principles-description">
+            <p class="description"><span
+                    style="color: #509E2F; font-weight: 900; font-size: 16px;">EIGHT PRINCIPLES</span><br>Click on a
+                thumbnail below to explore one of eight principles of <span style="font-style: italic">Culturally Enriched Communities</span>
+                or click on the <span style="font-weight: 900;">Eight Principles</span> link in the
+                navigation bar above.</p>
+        </div>
+
+        <div class="thumbnail-container">
+            <a href="principle_three_icons.html">
+                <div id="thumbnail-container-03"></div>
+            </a>
+
+            <a href="principle_two_icons.html"><div id="thumbnail-container-02"></div>
+            </a>
+
+            <a href="principle_one_icons.html">
+                <div id="thumbnail-container-01"></div>
+            </a>
+
+            <a href="principle_six_icons.html">
+                <div id="thumbnail-container-06"></div>
+            </a>
+            <a href="principle_five_icons.html">
+                <div id="thumbnail-container-05"></div>
+            </a>
+
+            <a href="principle_four_icons.html">
+                <div id="thumbnail-container-04"></div>
+            </a>
+
+            <a href="principle_eight_icons.html">
+                <div id="thumbnail-container-08"></div>
+            </a>
+            <a href="principle_seven_icons.html">
+                <div id="thumbnail-container-07"></div>
+            </a>
+
+        </div>
+
+    </div><!--end of left_column-->
+
+    <div class="main">
+        <div class="main-title">
+            <p class="page-title">Introduction to<br/>Culturally Enriched Communities</p>
+        </div><!--end of main_box-->
+
+        <div class=""><img src="images/somali-woman-walking.jpg"/></div>
+
+        <p class="main-caption"><span style="font-weight:900;">ABOVE</span> <span style="font-style:italic;">Culturally Enriched Communities</span>
+            recognize the potential that lies within each individual and thereby, include spaces that support diverse
+            ways of living and being in the world, contributing to the prosperity and well-being of all people.</p>
+
+
+        <p class="main-content">The state of Minnesota consistently ranks among the top 10 states in the country in
+            terms of quality of life, based on well being indicators such as employment rates, education, income,
+            safety,
+            health, environment, civic engagement, accessibility to services, and housing (Hess & Frohlich, 2014). In
+            parallel, the Greater Minneapolis and St Paul (MSP) region is noted among the country’s most innovative
+            cities, for
+            transportation infrastructure and economic development, programs to help immigrants start businesses and
+            artists buy real estate as well as public health efforts (Eugenios, Hargreaves, & Rawlins, 2014). The MSP
+            region has also been named by the researchers at Parenting Magazine as one of the top five places in the
+            country to raise a family (Schmidt, n.d.). And, with over 180 parks within its boundaries, Minneapolis holds
+            the title of the Nation’s best park system (The Trust for Public Land, 2015) and is ranked as one of the top
+            biking cities in the country, with 92 miles of on-street bikeways and 85 miles of off-street bikeways (City
+            of Minneapolis, 2015). The arts scene follows suit--the MSP region is second only to New York City in live
+            theater per capita and is the third-largest theater market in the United States.</p>
+        <p class="main-content">Positioning the state for a vibrant and prosperous future is tied to demographic
+            projections that by 2040, close to 40% of Minnesota’s
+            population will be people of color, many of them international immigrants
+            (Metropolitan Council, 2012). In 2013, only about 18.1% of Minnesota residents were people of color versus
+            37.4% at the national</p>
+        <p class="main-content">Although Minnesota enjoys high ranks in many quality of life indicators, it also
+            experiences disparities in health, education, and income between whites and people of color. Given that a
+            diverse population is key to economic and cultural vitality, designers, planners, policy makers, housing
+            developers, neighborhood organizers, and others who are striving to unravel how to integrate the state’s
+            social, economic, cultural, environmental, and technological resources face multiple questions:</p>
+        <p class="main-content">How can Minnesota attract and retain a diverse population?</p>
+        <p>
+        <ul class="main-content">
+            <li> How can communities support diverse needs and nurture in residents a feeling of value and commitment?
+            </li>
+            <li>In what ways can stereotypes and barriers for the creation of
+                healthy and thriving communities break-down?
+            </li>
+            <li>How can design support culturally diverse businesses and
+                development of homes and neighborhoods that support
+                diverse ways of living?
+            </li>
+            <li>What kind of design interventions can create forums for
+                public engagement that tap a community’s diversity and
+                support health and well-being? And,
+            </li>
+            <li>How can the area’s multiculturalism be translated into
+                income-generating opportunities?
+            </li>
+        </ul>
+        </p>
+        <p class="main-content">Culturally Enriched Communities are an inherent part of planning processes that
+            strengthen an area’s ability
+            to plan for the growth in diversity in ways that can position the region to rank among the best in world
+            while improving upon the indicators of uneven disparities. Culturally Enriched Communities include
+            environments that support diverse ways of living. Recognizing the potential that lies within each individual
+            and group and how places, both public and private, can impact one’s ability to be the best that they can be,
+            Culturally Enriched Communities allow for the creation of municipalities that can contribute to the
+            prosperity and well-being of all people. The creation of Culturally Enriched Communities relies on planners,
+            policy leaders, housing developers, and others who feel an obligation to understand those they are working
+            with and are interested in the lives of others.</p>
+        <p class="main-content">These decision makers recognize that people construct meaning in life through different
+            ways, that is, how
+            they cook, what they eat, what they wear, how they socialize, how they speak, how they pray, and how they
+            play is diverse. Diverse ways of living are outcomes of numerous factors including distinct ethnic, racial,
+            and national backgrounds, histories, religions, incomes, ages, gender, abilities, and circumstances. As a
+            result, the design of public and private spaces must be adaptable and flexible, able to be easily adjusted
+            to the multiplicity of lifestyles and needs that our region’s future will hold.</p>
+        <p class="main-content">When Principles of Culturally Enriched Communities are applied to a home, it could mean
+            designing a kitchen so that it can be used as an open or closed space with built-in adaptability that would
+            not require expensive remodeling to accommodate cooking practices. In a public space, these Principles could
+            translate into signage in different languages and gathering areas that bring people together and allow for
+            connections to form and stereotypes to break.</p>
+        <p class="main-content">Professionals working toward Culturally Enriched Communities are willing to move beyond
+            the basics, the comfortable, and the familiar to understand the people they are working with as individuals
+            who change and evolve as they move through their lives. These professionals consider the impact of the
+            designed environment on the construction of marginalization and difference — from limiting the types of
+            foods one can eat, to the relationships one can form, the dress he/she can wear, traditions the family can
+            practice and pass down, and aspirations for the future. As a result, these community building development
+            programs are committed to the eight Principles of Culturally Enriched
+            Communities and in turn, they:</p>
+        <p>
+        <ol class="main-content">
+            <li>Foster partnerships and create synergies among stakeholders that range from policy makers, designers,
+                and planners to business and community leaders, institutions, and community members.
+            </li>
+            <li>Use community engagement to strengthen the values and unique character
+                of a given region and community at levels that include homes, neighborhoods, cities, the
+                region, and the state.
+            </li>
+            <li>Bridge the local and the global, enabling residents to retain their global connections and
+                build economically thriving communities.
+            </li>
+            <li>Celebrate the diverse histories, traditions, backgrounds, and meaning-making practices of the
+                many people that comprise a community.
+            </li>
+            <li>Create opportunities for people of diverse backgrounds to interact with each other in
+                meaningful ways, helping break down stereotypes and challenge assumptions.
+            </li>
+            <li>Support the health and well-being of everyone, accounting for the diverse ways by which
+                humans cook, eat, sleep, socialize, dress, pray, recreate, exercise, etc. and for the needs of
+                people of all ages, races, abilities, ethnic backgrounds, and socio-economic status.
+            </li>
+            <li>Strengthen job and educational opportunities that bring about equality and social justice
+                and enhance the economic prospects of an area.
+            </li>
+            <li>Recognize that an open mind is crucial for innovation to flourish. This often implies exploring
+                new ideas and new ways of doing things.
+            </li>
+        </ol>
+        </p>
+
+
+
+    </div><!--end of main-->
+
+    <div class="right-column">
+
+        <div class="right-column-content">
+            <p><span style="color: #509E2F; font-size: 16px; font-weight: 900;">STEPS FOR WORKING TOWARD CULTURALLY ENRICHED COMMUNITIES</span>
+            </p>
+            <p class="steps-for-working">
+            <ol>
+                <li>Consider choice Effective planning for the future cannot take place without acknowledging the
+                    multiple ways by which people construct meaning in their lives. Often, those choices are bounded
+                    and limited as a result of factors such as health, income, and educational disparities;
+                    stereotypes; access to opportunities, and circumstances, all of which are impacted by the built
+                    environment.
+                </li>
+                <li>Understand diverse perspectives Time, energy, and funds need to be devoted to capturing diverse
+                    perspectives and experiences - from policy makers to community members who are immersed in the
+                    problem/issue on hand. Rethinking where expertise lies is an instrumental part of this process.
+                </li>
+                <li>Develop plans and policies In developing plans and policies, account for the complex and
+                    multi-dimensional perspectives identified. These must be flexible and adaptable to accommodate
+                    multiple uses and users.
+                </li>
+                <li>Act as agents of change The built environment can be a medium for challenging assumptions and
+                    creating dialogues about the creation of communities where everyone can thrive.
+                </li>
+            </ol>
+            </p>
+        </div><!--end of right-column-content-->
+    </div><!--end of right-column-->
+
+    <footer>This report is centered on the question of what would it take for Minnesota to continue
+        to prosper and flourish<br/>in the future and what role can the built environment play in the process?
+    </footer>
+
+</div><!--end of container-->
+
+</body>
+</html>

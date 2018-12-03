@@ -1,0 +1,653 @@
+* {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: wheat;
+}
+
+.container {
+    width: 1180px;
+    height: 3000px;
+    background-color: white;
+    margin: 0 auto;
+    position: relative;
+}
+
+.logo {
+    width: 1180px;
+    height: 100px;
+    background-color: white;
+    margin: 0 auto;
+    padding-left: 10px;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+}
+
+.logo_housing_counts {
+    width: 1180px;
+    height: 100px;
+    margin-left: 895px;
+    margin-top: 45px;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+}
+
+
+nav {
+    width: 1160px;
+    height: 60px;
+    /*background-color: #FF6900;*/
+    background-color: #E97D2C;
+    border-radius: 5px;
+    margin-left: 10px;
+    position: fixed;
+    top: 100px;
+    z-index: 100;
+}
+
+.dropbtn {
+    /*background-color: #FF6900;*/
+    background-color: #E97D2C;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    transition: color 1s ease-out;
+}
+
+.dropbtn {
+    outline: none;
+}
+
+.dropbtn:link {
+    outline: none;
+}
+
+.dropbtn:visited {
+    outline: none;
+}
+
+
+.dropbtn:hover {
+    outline: none;
+}
+
+.dropbtn:active {
+    outline: none;
+}
+
+.dropbtn:focus {
+    outline: none;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 60px;
+    background-color: lightgrey;
+    min-width: 180px;
+    box-shadow: 0 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    color: #555025;
+    /*background-color: #FF6900;*/
+    background-color: #E97D2C;
+    cursor: pointer;
+
+}
+
+.dropbtn-right {
+    /*background-color: #FF6900;*/
+    background-color: #E97D2C;
+    color: palegoldenrod;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    transition: color 1s ease-out;
+}
+
+.dropbtn-right:hover {
+    color: #555025;
+    cursor: pointer;
+}
+
+.dropdown-right {
+    position: relative;
+    display: inline-block;
+    float: right;
+}
+
+.eight-principles-description {
+    width: 300px;
+    height: 75px;
+    background-color: white;
+    position: fixed;
+    top: 200px;
+    z-index: 200;
+}
+
+.best-practices-description {
+    width: 300px;
+    height: 75px;
+    background-color: white;
+    text-align: left;
+    position: fixed;
+    top: 250px;
+    z-index: 200;
+}
+
+p.description {
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: right;
+    /*position: fixed;*/
+    /*top: 170px;*/
+    padding-top: 0;
+    padding-right: 20px;
+    padding-left: 10px;
+}
+
+p.description_right {
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: left;
+    padding-top: 0;
+    padding-left: 0px;
+    padding-right: 5px;
+}
+
+
+.page-title {
+    color: #555025;
+    font-family: 'Roboto', sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    margin-top: 0;
+    padding-top: 10px;
+    padding-left: 15px;
+}
+
+.left-column {
+    box-sizing: border-box;
+    width: 300px;
+    height: 1500px;
+    background-color: white;
+    float: left;
+    position: sticky;
+    top: 170px;
+}
+
+.main {
+    width: 580px;
+    height: 2775px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    margin: 0 auto;
+    padding: 15px 20px;
+    position: absolute;
+    top: 200px;
+    /*margin-top: 170px;*/
+    margin-left: 300px;
+}
+
+.main-title {
+    width: 580px;
+    /*background-color: #FF6900;*/
+    background-color: white;
+    border-radius: 10px 10px 0 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+p.page-title {
+    padding: 20px;
+}
+
+p.main-caption {
+    color: #555025;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    text-align: left;
+    padding: 10px 10px 20px 15px;
+}
+
+p.main-content {
+    color: #555025;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: left;
+    line-height: 20px;
+    padding: 10px 0;
+}
+
+p.practice_titles {
+    color: #555025;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 900;
+    text-align: left;
+    text-decoration: none;
+    line-height: 25px;
+    padding: 10px;
+}
+
+.practice_titles a:link {
+    color: #555025;
+    text-decoration: none;
+}
+
+.practice_titles a:visited {
+    color: #555025;
+}
+
+.practice_titles a:hover {
+    color: #509E2F;
+}
+
+h3.main-content {
+    color: #555025;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: left;
+    line-height: 20px;
+    padding: 10px 40px;
+}
+
+
+ul.main-content {
+    color: #555025;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: left;
+    line-height: 20px;
+    padding: 10px 40px;
+    margin-left: 15px;
+}
+
+ol.main-content {
+    color: #555025;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: left;
+    line-height: 20px;
+    padding: 10px 40px;
+    margin-left: 15px;
+}
+
+.thumbnail-container {
+    width: 280px;
+    height: 300px;
+    background-color: white;
+    position: fixed;
+    top: 300px;
+}
+
+.principle_thumbnail {
+    width: 80px;
+    height: 80px;
+    float: right;
+    margin: 0 0 10px 10px;
+}
+
+.principle_thumbnail:hover {
+    background-image: url("images/nav-one-principle-hover.jpg");
+}
+
+footer {
+    width: 1160px;
+    height: 50px;
+    color: white;
+    /*background-color: #FF6900;*/
+    background-color: #E97D2C;
+
+    border-radius: 5px;
+    margin-left: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 10px;
+    padding: 5px;
+    position: absolute;
+    bottom: 0;
+}
+
+.right-column {
+    width: 300px;
+    height: 1500px;
+    background-color: white;
+    float: right;
+    position: sticky;
+    top: 170px;
+}
+
+.right-column-content {
+    width: 300px;
+    /*height: 700px;*/
+    /*background-color: white;*/
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    position: fixed;
+    top: 200px;
+    /*z-index: 200;*/
+    padding: 0 15px 0 15px;
+}
+
+.steps-for-working {
+    padding-top: 5px;
+}
+
+img {
+    margin: 0 auto;
+}
+
+a.principle_thumbnail:hover {
+    background-image: url();
+}
+
+#thumbnail-container-01 {
+    background-image: url('images/nav_principle_one_green.jpg');
+    height: 80px;
+    width: 80px;
+    border-radius: 5px;
+    float: right;
+    margin: 0 0 10px 10px;
+    transition-duration: 1.5s;
+}
+
+#thumbnail-container-01:hover {
+    background-image: url('images/nav_principle_one_green_hover.jpg');
+    height: 80px;
+    width: 80px;
+    opacity: 1;
+    cursor: pointer;
+}
+
+#thumbnail-container-02 {
+    background-image: url('images/nav_principle_two_green.jpg');
+    height: 80px;
+    width: 80px;
+    border-radius: 5px;
+    float: right;
+    margin: 0 0 10px 10px;
+    transition-duration: 1.5s;
+}
+
+#thumbnail-container-02:hover {
+    background-image: url('images/nav_principle_two_green_hover.jpg');
+    height: 80px;
+    width: 80px;
+    opacity: 1;
+    cursor: pointer;
+}
+
+#thumbnail-container-03 {
+    background-image: url('images/nav_principle_three_green.jpg');
+    height: 80px;
+    width: 80px;
+    border-radius: 5px;
+    float: right;
+    margin: 0 0 10px 10px;
+    transition-duration: 1.5s;
+}
+
+#thumbnail-container-03:hover {
+    background-image: url('images/nav_principle_three_green_hover.jpg');
+    height: 80px;
+    width: 80px;
+    opacity: 1;
+    cursor: pointer;
+}
+
+#thumbnail-container-04 {
+    background-image: url('images/nav_principle_four_green.jpg');
+    height: 80px;
+    width: 80px;
+    border-radius: 5px;
+    float: right;
+    margin: 0 0 10px 10px;
+    transition-duration: 1.5s;
+}
+
+#thumbnail-container-04:hover {
+    background-image: url('images/nav_principle_four_green_hover.jpg');
+    height: 80px;
+    width: 80px;
+    opacity: 1;
+    cursor: pointer;
+}
+
+#thumbnail-container-05 {
+    background-image: url('images/nav_principle_five_green.jpg');
+    height: 80px;
+    width: 80px;
+    border-radius: 5px;
+    float: right;
+    margin: 0 0 10px 10px;
+    transition-duration: 1.5s;
+}
+
+#thumbnail-container-05:hover {
+    background-image: url('images/nav_principle_five_green_hover.jpg');
+    height: 80px;
+    width: 80px;
+    opacity: 1;
+    cursor: pointer;
+}
+
+#thumbnail-container-06 {
+    background-image: url('images/nav_principle_six_green.jpg');
+    height: 80px;
+    width: 80px;
+    border-radius: 5px;
+    float: right;
+    margin: 0 0 10px 10px;
+    transition-duration: 1.5s;
+}
+
+#thumbnail-container-06:hover {
+    background-image: url('images/nav_principle_six_green_hover.jpg');
+    height: 80px;
+    width: 80px;
+    opacity: 1;
+    cursor: pointer;
+}
+
+#thumbnail-container-07 {
+    background-image: url('images/nav_principle_seven_green.jpg');
+    height: 80px;
+    width: 80px;
+    border-radius: 5px;
+    float: right;
+    margin: 0 0 10px 10px;
+    transition-duration: 1.5s;
+}
+
+#thumbnail-container-07:hover {
+    background-image: url('images/nav_principle_seven_green_hover.jpg');
+    height: 80px;
+    width: 80px;
+    opacity: 1;
+    cursor: pointer;
+}
+
+#thumbnail-container-08 {
+    background-image: url('images/nav_principle_eight_green.jpg');
+    height: 80px;
+    width: 80px;
+    border-radius: 5px;
+    float: right;
+    margin: 0 0 10px 10px;
+    transition-duration: 1.5s;
+}
+
+#thumbnail-container-08:hover {
+    background-image: url('images/nav_principle_eight_green_hover.jpg');
+    height: 80px;
+    width: 80px;
+    opacity: 1;
+    cursor: pointer;
+}
+
+.main-orange-bar {
+    height: 15px;
+    width: 500px;
+    margin-top: 20px;
+    margin-left: 40px;
+    /*background-color: #FF6900;*/
+    background-color: #E97D2C;
+}
+
+#thumbnail-container-01-practice {
+    background-image: url('images/nav_one_principle_orange.png');
+    height: 80px;
+    width: 80px;
+    border-radius: 5px;
+    float: right;
+    margin: 0 0 10px 10px;
+    transition-duration: 1.5s;
+}
+
+#thumbnail-container-01-practice:hover {
+    background-image: url('images/nav_one_principle_hover_orange.png');
+    height: 80px;
+    width: 80px;
+    opacity: 1;
+    cursor: pointer;
+}
+
+#thumbnail-container-02-practice {
+    background-image: url('images/nav_two_principle.jpg');
+    height: 80px;
+    width: 80px;
+    border-radius: 5px;
+    float: right;
+    margin: 0 0 10px 10px;
+    transition-duration: 1.5s;
+}
+
+#thumbnail-container-02-practice:hover {
+    background-image: url('images/nav_two_principle_hover.jpg');
+    height: 80px;
+    width: 80px;
+    opacity: 1;
+    cursor: pointer;
+}
+
+#thumbnail-container-03-practice {
+    background-image: url('images/nav_three_principle.jpg');
+    height: 80px;
+    width: 80px;
+    border-radius: 5px;
+    float: right;
+    margin: 0 0 10px 10px;
+    transition-duration: 1.5s;
+}
+
+#thumbnail-container-03-practice:hover {
+    background-image: url('images/nav_three_principle_hover.jpg');
+    height: 80px;
+    width: 80px;
+    opacity: 1;
+    cursor: pointer;
+}
+
+#thumbnail-container-04-practice {
+    background-image: url('images/nav_four_principle.jpg');
+    height: 80px;
+    width: 80px;
+    border-radius: 5px;
+    float: right;
+    margin: 0 0 10px 10px;
+    transition-duration: 1.5s;
+}
+
+#thumbnail-container-04-practice:hover {
+    background-image: url('images/nav_four_principle_hover.jpg');
+    height: 80px;
+    width: 80px;
+    opacity: 1;
+    cursor: pointer;
+}
+
+#thumbnail-container-05-practice {
+    background-image: url('images/nav_five_principle.jpg');
+    height: 80px;
+    width: 80px;
+    border-radius: 5px;
+    float: right;
+    margin: 0 0 10px 10px;
+    transition-duration: 1.5s;
+}
+
+#thumbnail-container-05-practice:hover {
+    background-image: url('images/nav_five_principle_hover.jpg');
+    height: 80px;
+    width: 80px;
+    opacity: 1;
+    cursor: pointer;
+}
+
+.icon {
+    height: 80px;
+    width: 80px;
+    border-radius: 5px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    float: left;
+
+}
+
+input[type=text] {
+    float: right;
+    padding: 6px;
+    border: solid orange 2px;
+    margin-top: 5px;
+    margin-right: 20px;
+    font-size: 16px;
+
+}
